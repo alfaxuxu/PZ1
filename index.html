@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мебельный магазин</title>
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="text_align_center">
         <img src="assets/icons/Search.png" alt="search">
         <img src="assets/img/Logo.png" alt="logo">
         <img src="assets/icons/Shopping--cart.png" alt="shop">
         <img src="assets/icons/User--avatar.png" alt="accaunt">
     </header>
-    <nav>
+    <nav class="text_align_center">
         <a href="#">Горшки для растений</a>
         <a href="#">Керамика</a>
         <a href="#">Столы</a>
@@ -24,41 +25,41 @@
         <a href="#">Столовые приборы</a>
     </nav>
     <main>
-        <section>
-            <h2>Мебельный бренд будущего с&nbsp;вневременным дизайном</h2>
-            <button name="button">Коллекция</button>
-            <p>Новая эра экологичной мебели с&nbsp;Avelon, французским брендом класса люкс
+        <section class="bg_dark_primary text_white margin_20">
+            <h2 class="text_white">Мебельный бренд будущего с&nbsp;вневременным дизайном</h2>
+            <button class="bg_primary text_white hover-grow active-scale" name="button">Коллекция</button>
+            <p class="text_white">Новая эра экологичной мебели с&nbsp;Avelon, французским брендом класса люкс
                 с&nbsp;приятными шрифтами, изысканными цветами и&nbsp;прекрасным способом цифровой презентации
                 с&nbsp;использованием современных веб-технологий</p>
         </section>
-        <section>
-            <h2>Что отличает наш бренд</h2>
+        <section id="О_нас">
+            <h2 class="text_align_center text_dark_primary">Что отличает наш бренд</h2>
             <img src="assets/icons/Delivery.png" alt="delivery">
             <img src="assets/icons/Checkmark--outline.png" alt="checkmark">
             <img src="assets/icons/Purchase.png" alt="purchase">
             <img src="assets/icons/Sprout.png" alt="sprout">
         </section>
-        <section>
-            <h2>Новая керамика</h2>
+        <section id="Новинки">
+            <h2 class="text_dark_primary">Новинки</h2>
             <img src="assets/img/Photo_0.png" alt="Photo_0">
             <img src="assets/img/Photo_1.png" alt="Photo_1">
             <img src="assets/img/Photo_2.png" alt="Photo_2">
             <img src="assets/img/Photo_3.png" alt="Photo_3">
-            <button name="button">Коллекция</button>
+            <button class="hover-grow active-scale" name="button">Коллекция</button>
         </section>
-        <section>
-            <h2>Наши популярные товары</h2>
+        <section id="Наши_популярные_товары">
+            <h2 class="text_dark_primary">Наши популярные товары</h2>
             <img src="assets/img/Large.png" alt="Large_photo">
             <img src="assets/img/Photo_3.png" alt="Photo_3">
             <img src="assets/img/Photo_0.png" alt="Photo_0">
-            <button name="button">Коллекция</button>
+            <button class="hover-grow active-scale" name="button">Коллекция</button>
         </section>
-        <section>
+        <section class="text_align_center">
             <h2>Вступайте в&nbsp;клуб и&nbsp;получайте преимущества</h2>
             <p>Подпишитесь на&nbsp;нашу рассылку и&nbsp;получайте эксклюзивные предложения о&nbsp;новых
                 ассортиментах, распродажах, временных магазинах и&nbsp;многом другом.</p>
             <input type="email" placeholder="your@email.com" />
-            <button name="button">Зарегистироваться</button>
+            <button class="active-scale bg_dark_primary text_white" name="button">Регистрация</button>
         </section>
         <section>
             <aside>
@@ -73,42 +74,43 @@
                     чем мы&nbsp;живём,
                     дышим и&nbsp;что создаём, поэтому наш бутик в&nbsp;Челси стал центром лондонского сообщества
                     дизайнеров интерьера.</p>
-                <button name="button">Связаться</button>
+                <button class="hover-grow active-scale" name="button">Связаться</button>
             </article>
         </section>
     </main>
-    <footer style="background-color: rgb(42, 37, 75);">
+    <footer class="bg_dark_primary text_white">
         <p>Меню</p>
-        <ul style="color: white; list-style-type: none; padding-left: 0;">
-            <li><a style="color: white;" href="#">Новинки</a></li>
-            <li><a style="color: white;" href="#">Бестселлеры</a></li>
-            <li><a style="color: white;" href="#">Недавно просмотренные</a></li>
-            <li><a style="color: white;" href="#">Популярно сейчас</a></li>
-            <li><a style="color: white;" href="#">Все товары</a></li>
+        <ul>
+            <li><a href="#Новинки">Новинки</a></li>
+            <li><a href="#">Бестселлеры</a></li>
+            <li><a href="#">Недавно просмотренные</a></li>
+            <li><a href="#Наши_популярные_товары">Популярно сейчас</a></li>
+            <li><a href="#">Все товары</a></li>
         </ul>
         <p>Категории</p>
-        <ul style="color: white; list-style-type: none; padding-left: 0;">
-            <li><a style="color: white;" href="#">Посуда</a></li>
-            <li><a style="color: white;" href="#">Мебель</a></li>
-            <li><a style="color: white;" href="#">Товары для дома</a></li>
-            <li><a style="color: white;" href="#">Цветочные горшки</a></li>
-            <li><a style="color: white;" href="#">Столья</a></li>
+        <ul style="list-style-type: none; padding-left: 0;">
+            <li><a href="#">Посуда</a></li>
+            <li><a href="#">Мебель</a></li>
+            <li><a href="#">Товары для дома</a></li>
+            <li><a href="#">Цветочные горшки</a></li>
+            <li><a href="#">Стулья</a></li>
         </ul>
         <p>Наша компания</p>
-        <ul style="color: white; list-style-type: none; padding-left: 0;">
-            <li><a style="color: white;" href="#">О&nbsp;нас</a></li>
-            <li><a style="color: white;" href="#">Вакансии</a></li>
-            <li><a style="color: white;" href="#">Контакты</a></li>
-            <li><a style="color: white;" href="#">Конфиденциальность</a></li>
-            <li><a style="color: white;" href="#">Возврат товаров</a></li>
+        <ul style="list-style-type: none; padding-left: 0;">
+            <li><a href="#О_нас">О&nbsp;нас</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Конфиденциальность</a></li>
+            <li><a href="#">Возврат товаров</a></li>
         </ul>
-        <p style="color: white;">Подпишитесь на&nbsp;рассылку</p>
+        <p>Подпишитесь на&nbsp;рассылку</p>
         <input type="email" placeholder="your@email.com" />
-        <button name="button">Подписаться</button>
-        <p style="color: white;"> Copyright 2022 Avion LTD</p>
+        <button class="active-scale" name="button">Подписаться</button>
+        <p> Copyright 2022 Avion LTD</p>
         <img src="assets/icons/Logo--linkedin.png" alt="linkedin">
         <img src="assets/icons/Logo--skype.png" alt="skype">
         <img src="assets/icons/Logo--pinterest.png" alt="pinterest">
     </footer>
 </body>
+
 </html>
