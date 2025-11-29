@@ -1,0 +1,147 @@
+/*Сброс стилей (минимальный и чаще всего достаточный)*/
+/*
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*/
+
+/*Сброс стилей (полный)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+
+/*Подключение шрифтов*/
+/* Способ 1: Google Fonts */
+/*
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); 
+*/
+
+/* Способ 2: Загрузка и импорт */
+@font-face {
+    font-family: "Esqadero";
+    src: url('/assets/fonts/EsqaderoFFCY4F.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Acrom";
+    src: url('/assets/fonts/Acrom-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+    padding: 20px;
+}
+
+ol, ul {
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    line-height: 1;
+    font-family: "Acrom", system-ui, sans-serif;
+    font-size: 0.9em;
+}
+
+button {
+    font-family: "Acrom", system-ui, sans-serif;
+    padding: 10px 20px;
+    border: none;
+}
+
+h2 {
+    font-family: "Esqadero", system-ui, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    transform: scale(1.03);
+}
+
+footer a {
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.text_align_center {
+    text-align: center;
+}
+
+.bg_dark_primary {
+    background-color: rgb(42, 37, 75);
+}
+
+.bg_primary {
+    background-color: rgb(78, 77, 147);
+}
+
+.text_white {
+    color: white;
+}
+
+.margin_20 {
+    margin: 20px;
+}
+
+.hover-grow:hover {
+    transform: scale(1.02);
+}
+
+.active-scale:active {
+    transform: scale(0.98);
+}
