@@ -39,13 +39,13 @@ time, mark, audio, video {
 /* Способ 2: Загрузка и импорт */
 @font-face {
     font-family: "Esqadero";
-    src: url('/assets/fonts/EsqaderoFFCY4F.woff') format('woff');
+    src: url('../fonts/EsqaderoFFCY4F.woff') format('woff');
     font-display: swap;
 }
 
 @font-face {
     font-family: "Acrom";
-    src: url('/assets/fonts/Acrom-Regular.woff') format('woff');
+    src: url('../fonts/Acrom-Regular.woff') format('woff');
     font-display: swap;
 }
 
@@ -95,6 +95,7 @@ h2 {
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: rgb(42, 37, 75);
 }
 
 a {
@@ -106,8 +107,16 @@ a:hover {
     transform: scale(1.03);
 }
 
-footer a {
+footer a, footer p {
     color: white;
+}
+
+nav a {
+    color: rgb(78, 77, 147);
+}
+
+p {
+    color: rgb(78, 77, 147);
 }
 
 .flex {
@@ -128,6 +137,14 @@ footer a {
 
 .bg_primary {
     background-color: rgb(78, 77, 147);
+}
+
+.text_dark_primary {
+    color: rgb(42, 37, 75);
+}
+
+.text_primary {
+    color: rgb(78, 77, 147);
 }
 
 .text_white {
