@@ -10,12 +10,19 @@
 </head>
 
 <body>
-    <header class="text_align_center">
-        <img src="assets/icons/Search.png" alt="search">
-        <img src="assets/img/Logo.png" alt="logo">
-        <img src="assets/icons/Shopping--cart.png" alt="shop">
-        <img src="assets/icons/User--avatar.png" alt="accaunt">
+    <header class="flex_space_between">
+        <div>
+            <img src="assets/icons/Search.png" alt="search">
+        </div>
+        <div>
+            <img src="assets/img/Logo.png" alt="logo">
+        </div>
+        <div>
+            <img src="assets/icons/Shopping--cart.png" alt="shop">
+            <img src="assets/icons/User--avatar.png" alt="accaunt">
+        </div>
     </header>
+
     <nav class="text_align_center">
         <a href="#">Горшки для растений</a>
         <a href="#">Керамика</a>
@@ -24,36 +31,107 @@
         <a href="#">Посуда</a>
         <a href="#">Столовые приборы</a>
     </nav>
+
     <main>
-        <section class="bg_dark_primary text_white margin_20">
-            <h2 class="text_white">Мебельный бренд будущего с&nbsp;вневременным дизайном</h2>
-            <button class="bg_primary text_white hover-grow active-scale" name="button">Коллекция</button>
-            <p class="text_white">Новая эра экологичной мебели с&nbsp;Avelon, французским брендом класса люкс
-                с&nbsp;приятными шрифтами, изысканными цветами и&nbsp;прекрасным способом цифровой презентации
-                с&nbsp;использованием современных веб-технологий</p>
+
+        <section class="grid_1_auto">
+            <div class="bg_dark_primary text_white padding_20 flex_column">
+                <div>
+                    <h2 class="text_white">Мебельный бренд будущего с&nbsp;вневременным дизайном</h2>
+                    <button class="bg_primary text_white hover-grow active-scale margin_15_top_buttom"
+                        name="button">Коллекция</button>
+                </div>
+                <div class="content_down">
+                    <p class="text_white">Новая эра экологичной мебели с&nbsp;Avelon, французским брендом класса люкс
+                        с&nbsp;приятными шрифтами, изысканными цветами и&nbsp;прекрасным способом цифровой презентации
+                        с&nbsp;использованием современных веб-технологий</p>
+                </div>
+            </div>
+            <div class="grid_justify_end grid_align_stretch adaptive">
+                <img src="assets/img/Photo_0.png" alt="Photo_0">
+            </div>
         </section>
+
         <section id="О_нас">
-            <h2 class="text_align_center text_dark_primary">Что отличает наш бренд</h2>
-            <img src="assets/icons/Delivery.png" alt="delivery">
-            <img src="assets/icons/Checkmark--outline.png" alt="checkmark">
-            <img src="assets/icons/Purchase.png" alt="purchase">
-            <img src="assets/icons/Sprout.png" alt="sprout">
+            <h2 class="text_align_center">Что отличает наш бренд</h2>
+            <div class="flex_space_evenly">
+                <div class="info_card">
+                    <img src="assets/icons/Delivery.png" alt="delivery">
+                    <h3>Привезем заказ на следующий день</h3>
+                    <p>Оформите заказ до 15:00 и получите его на следующий день</p>
+                </div>
+                <div class="info_card">
+                    <img src="assets/icons/Checkmark--outline.png" alt="checkmark">
+                    <h3>Сделано настоящими мастерами</h3>
+                    <p>Изделия ручной работы, созданные с настоящей страстью и мастерством</p>
+                </div>
+                <div class="info_card">
+                    <img src="assets/icons/Purchase.png" alt="purchase">
+                    <h3>Непревзойденные цены</h3>
+                    <p>За наши материалы и качество вы нигде не найдете более выгодных цен</p>
+                </div>
+                <div class="info_card">
+                    <img src="assets/icons/Sprout.png" alt="sprout">
+                    <h3>Переработанная упаковка</h3>
+                    <p>Мы заботимся об окружающей среде и используем 100% переработанную упаковку</p>
+                </div>
+            </div>
         </section>
+
         <section id="Новинки">
-            <h2 class="text_dark_primary">Новинки</h2>
-            <img src="assets/img/Photo_0.png" alt="Photo_0">
-            <img src="assets/img/Photo_1.png" alt="Photo_1">
-            <img src="assets/img/Photo_2.png" alt="Photo_2">
-            <img src="assets/img/Photo_3.png" alt="Photo_3">
-            <button class="hover-grow active-scale" name="button">Коллекция</button>
+            <h2>Новинки</h2>
+            <div class="flex_space_around">
+                <div class="product_card">
+                    <img src="assets/img/Photo_0.png" alt="Photo_0">
+                    <p>Стул Dendy</p>
+                    <p>2500₽</p>
+                </div>
+                <div class="product_card">
+                    <img src="assets/img/Photo_1.png" alt="Photo_1">
+                    <p>Ваза в деревенском стиле</p>
+                    <p>1500₽</p>
+                </div>
+                <div class="product_card">
+                    <img src="assets/img/Photo_2.png" alt="Photo_2">
+                    <p>Лампа Lusy</p>
+                    <p>1250₽</p>
+                </div>
+                <div class="product_card">
+                    <img src="assets/img/Photo_3.png" alt="Photo_3">
+                    <p>Стул Aver</p>
+                    <p>3990₽</p>
+                </div>
+            </div>
+            <div class="flex_align_center">
+                <button class="hover-grow active-scale margin_15_top_buttom" name="button">Коллекция</button>
+            </div>
+
         </section>
+
         <section id="Наши_популярные_товары">
-            <h2 class="text_dark_primary">Наши популярные товары</h2>
-            <img src="assets/img/Large.png" alt="Large_photo">
-            <img src="assets/img/Photo_3.png" alt="Photo_3">
-            <img src="assets/img/Photo_0.png" alt="Photo_0">
-            <button class="hover-grow active-scale" name="button">Коллекция</button>
+            <h2>Наши популярные товары</h2>
+            <div class="grid_2_1 grid_justify_center">
+                <div class="product_card_2 adaptive">
+                    <img src="assets/img/Large.png" alt="Large_photo">
+                    <p>Замшевый диван</p>
+                    <p>9800₽</p>
+                </div>
+                <div class="product_card_2">
+                    <img src="assets/img/Photo_3.png" alt="Photo_3">
+                    <p>Стул Aver</p>
+                    <p>2500₽</p>
+                </div>
+                <div class="product_card_2">
+                    <img src="assets/img/Photo_0.png" alt="Photo_0">
+                    <p>Стул Dendy</p>
+                    <p>2500₽</p>
+                </div>
+            </div>
+            <div class="flex_justify_center">
+                <button class="hover-grow active-scale margin_15_top_buttom" name="button">Коллекция</button>
+            </div>
         </section>
+
         <section class="text_align_center">
             <h2>Вступайте в&nbsp;клуб и&nbsp;получайте преимущества</h2>
             <p>Подпишитесь на&nbsp;нашу рассылку и&nbsp;получайте эксклюзивные предложения о&nbsp;новых
@@ -61,55 +139,79 @@
             <input type="email" placeholder="your@email.com" />
             <button class="active-scale bg_dark_primary text_white" name="button">Регистрация</button>
         </section>
-        <section>
-            <aside>
+
+        <section class="grid_1_1">
+            <div class="flex_column">
+                <div>
+                    <h2>От&nbsp;студии в&nbsp;Лондоне до&nbsp;мирового бренда с
+                        более 400 аутлетами</h2>
+                    <p>Когда мы&nbsp;основали Avion, идея была проста. Сделать высококачественную мебель
+                        доступной и&nbsp;доступной для массового рынка.
+                        Изготовленная вручную и&nbsp;с&nbsp;любовью мебель и&nbsp;товары для дома&nbsp;&mdash;
+                        это&nbsp;то,
+                        чем мы&nbsp;живём,
+                        дышим и&nbsp;что создаём, поэтому наш бутик в&nbsp;Челси стал центром лондонского сообщества
+                        дизайнеров интерьера.</p>
+                </div>
+                <div class="content_down">
+                    <button class="hover-grow active-scale margin_15_top_buttom" name="button">Связаться</button>
+                </div>
+            </div>
+            <div class="adaptive grid_align_center grid_justify_end grid_justify_center">
                 <img src="assets/img/Image.png" alt="image">
-            </aside>
-            <article>
-                <h2>От&nbsp;студии в&nbsp;Лондоне до&nbsp;мирового бренда с
-                    более 400 аутлетами</h2>
-                <p>Когда мы&nbsp;основали Avion, идея была проста. Сделать высококачественную мебель
-                    доступной и&nbsp;доступной для массового рынка.
-                    Изготовленная вручную и&nbsp;с&nbsp;любовью мебель и&nbsp;товары для дома&nbsp;&mdash; это&nbsp;то,
-                    чем мы&nbsp;живём,
-                    дышим и&nbsp;что создаём, поэтому наш бутик в&nbsp;Челси стал центром лондонского сообщества
-                    дизайнеров интерьера.</p>
-                <button class="hover-grow active-scale" name="button">Связаться</button>
-            </article>
+            </div>
         </section>
+
     </main>
-    <footer class="bg_dark_primary text_white">
-        <p>Меню</p>
-        <ul>
-            <li><a href="#Новинки">Новинки</a></li>
-            <li><a href="#">Бестселлеры</a></li>
-            <li><a href="#">Недавно просмотренные</a></li>
-            <li><a href="#Наши_популярные_товары">Популярно сейчас</a></li>
-            <li><a href="#">Все товары</a></li>
-        </ul>
-        <p>Категории</p>
-        <ul style="list-style-type: none; padding-left: 0;">
-            <li><a href="#">Посуда</a></li>
-            <li><a href="#">Мебель</a></li>
-            <li><a href="#">Товары для дома</a></li>
-            <li><a href="#">Цветочные горшки</a></li>
-            <li><a href="#">Стулья</a></li>
-        </ul>
-        <p>Наша компания</p>
-        <ul style="list-style-type: none; padding-left: 0;">
-            <li><a href="#О_нас">О&nbsp;нас</a></li>
-            <li><a href="#">Вакансии</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Конфиденциальность</a></li>
-            <li><a href="#">Возврат товаров</a></li>
-        </ul>
-        <p>Подпишитесь на&nbsp;рассылку</p>
-        <input type="email" placeholder="your@email.com" />
-        <button class="active-scale" name="button">Подписаться</button>
-        <p> Copyright 2022 Avion LTD</p>
-        <img src="assets/icons/Logo--linkedin.png" alt="linkedin">
-        <img src="assets/icons/Logo--skype.png" alt="skype">
-        <img src="assets/icons/Logo--pinterest.png" alt="pinterest">
+    <footer class="grid_2r_2c bg_dark_primary text_white">
+        <div class="flex_space_evenly">
+            <div class="flex_column">
+                <p>Меню</p>
+                <ul>
+                    <li><a href="#Новинки">Новинки</a></li>
+                    <li><a href="#">Бестселлеры</a></li>
+                    <li><a href="#">Просмотренные</a></li>
+                    <li><a href="#Наши_популярные_товары">Популярно</a></li>
+                    <li><a href="#">Все товары</a></li>
+                </ul>
+            </div>
+            <div class="flex_column">
+                <p>Категории</p>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><a href="#">Посуда</a></li>
+                    <li><a href="#">Мебель</a></li>
+                    <li><a href="#">Для дома</a></li>
+                    <li><a href="#">Горшки</a></li>
+                    <li><a href="#">Стулья</a></li>
+                </ul>
+            </div>
+            <div class="flex_column">
+                <p>Наша компания</p>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><a href="#О_нас">О&nbsp;нас</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Приватность</a></li>
+                    <li><a href="#">Возврат</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p>Подпишитесь на&nbsp;рассылку</p>
+            <input type="email" placeholder="your@email.com" />
+            <button class="active-scale" name="button">Подписаться</button>
+        </div>
+        <div class="span_2 flex_space_between">
+            <div class="grid_align_center">
+                <p>Все парава защищены</p>
+            </div>
+            <div>
+                <img src="assets/icons/Logo--linkedin.png" alt="linkedin">
+                <img src="assets/icons/Logo--skype.png" alt="skype">
+                <img src="assets/icons/Logo--pinterest.png" alt="pinterest">
+            </div>
+        </div>
+
     </footer>
 </body>
 
