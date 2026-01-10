@@ -12,6 +12,12 @@
 <body>
     <header class="flex_space_between">
         <div>
+            <!-- Гамбургер-кнопка (появляется только на tablet и mobile)-->
+            <button id="menuToggle" class="hamburger" aria-label="Открыть меню" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
             <img src="assets/icons/Search.png" alt="search">
         </div>
         <div>
@@ -24,12 +30,12 @@
     </header>
 
     <nav class="text_align_center">
-        <a href="#">Горшки для растений</a>
-        <a href="#">Керамика</a>
-        <a href="#">Столы</a>
-        <a href="#">Стулья</a>
-        <a href="#">Посуда</a>
-        <a href="#">Столовые приборы</a>
+        <a href="#Наши_популярные_товары">Горшки для растений</a>
+        <a href="#Наши_популярные_товары">Керамика</a>
+        <a href="#Наши_популярные_товары">Столы</a>
+        <a href="#Наши_популярные_товары">Стулья</a>
+        <a href="#Наши_популярные_товары">Посуда</a>
+        <a href="#Наши_популярные_товары">Столовые приборы</a>
     </nav>
 
     <main>
@@ -102,7 +108,7 @@
                     <p>3990₽</p>
                 </div>
             </div>
-            <div class="flex_align_center">
+            <div class="flex_justify_center">
                 <button class="hover-grow active-scale margin_15_top_buttom" name="button">Коллекция</button>
             </div>
 
@@ -213,6 +219,13 @@
         </div>
 
     </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Наверх">
+        ↑
+    </button>
+
+    <script src="./assets/scripts/menu.js"></script>
 </body>
 
 </html>
